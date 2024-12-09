@@ -7,29 +7,26 @@
 </head>
 <body>
     <h1>form</h1>
-    <form>
-        <label>Name</label>
-        <input type="text" required placeholder="Enter your name">
-        <label>Password</label>
-        <input required type="password" placeholder="Enter your password">
-        <label>Email</label>
-        <input required type="email" placeholder="Enter your email">
-        <label>Male</label>
-        <input type="radio"
-        value="male"
-        name="gender"
-        >
-        <label for="">Female</label>
-        <input type="radio"
-        value="female"
-        name="gender"
-        >
-        <label>Rather not to say</label>
-        <input type="radio"
-        value="rather-not-to-say"
-        name="gender"
-        >
-        <button>Send</button>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Name</label>
+            <input type="text"
+            pattern="[A-Za-z]{13}"
+             placeholder="Write your name">
+            <label for="">Email</label>
+            <input type="email" placeholder="Write your email address">
+            <label for="">Phone Number</label>
+            <input type="tel" placeholder="Write your phone number">
+        </fieldset>
+        <fieldset>
+            <legend>Work Exprerience</legend>
+            <label for="">Company name</label>
+            <input type="text" max="14" min="3">
+            <label>Years of exprerience</label>
+            <input type="number" max="2" min="1">
+        </fieldset>
+        <input type="submit">
     </form>
 </body>
 </html>
